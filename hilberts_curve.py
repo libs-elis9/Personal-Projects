@@ -16,7 +16,13 @@ def hilbert(side, level, ang=90):
   hilbert(side, level-1, -ang)
   left(ang)
 
-def run_hilbert(level, s=13):
+def run_hilbert(level: int, s: int=13):
+  '''
+  Draw's Hilberts Curve
+
+  :param level: the level of curve (square within a square)
+  :param s: speed at which the curve is drawn
+  '''
   initializeTurtle()
   hideturtle()
   speed(s)  
